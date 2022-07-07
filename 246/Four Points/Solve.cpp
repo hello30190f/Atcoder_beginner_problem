@@ -7,6 +7,9 @@ int main() {
     int position1[6];
     int odd[3]; // y
     int even[3]; // x
+
+    int diffrece_x[2];
+    int diffrece_y[2];
     // int position2[2];
     // int position3[2];
 
@@ -16,15 +19,49 @@ int main() {
     }
 
     for(int i = 0; i < 3; i++){
-        
         even[i] = position1[i * 2];
-        cout << even[i] << endl;
+        // cout << even[i] << endl;
         // cout << position1[i] << endl;
     }
 
-        for(int i = 0; i < 3; i++){
+    for(int i = 0; i < 3; i++){
         odd[i] = position1[i * 2 + 1];
-        cout << odd[i] << endl;
+        // cout << odd[i] << endl;
         // cout << position1[i] << endl;
     }
+
+
+
+    for(int i = 0; i < 2; i++){
+        // odd[i] = position1[i * 2 + 1];
+        if(odd[i] == odd[i + 1]){
+            // diffrece_x = odd[i];
+        }else{
+            diffrece_x[i] = odd[i];
+            diffrece_x[i + 1] = odd[i  + 1];
+
+        }
+        // cout << odd[i] << endl;
+        // cout << position1[i] << endl;
+    cout << diffrece_x[i] << endl;
+        
+    }
+
+    for(int i = 0; i < 2; i++){
+        // odd[i] = position1[i * 2 + 1];
+        if(even[i] == even[i + 1]){
+            // diffrece_x = even[i];
+        }else{
+            diffrece_y[i] = even[i];
+            diffrece_y[i + 1] = even[i  + 1];
+
+        }
+
+    cout << diffrece_y[i] << endl;
+
+        // cout << odd[i] << endl;
+        // cout << position1[i] << endl;
+    }
+
+
 }
