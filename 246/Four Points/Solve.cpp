@@ -71,3 +71,7 @@ cout << endl;
 
 
 }
+
+
+// ANS URL
+// https://atcoder.jp/contests/abc246/editorial/3704
